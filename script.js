@@ -30,11 +30,16 @@ button.addEventListener("click", () => {
 let copyPass = document.querySelector("#copy");
 
 copyPass.addEventListener("click", () => {
+    if (passwordBox.value === "") {
+        alert("First, generate the Password!!");
+    } else {
+        navigator.clipboard.writeText(passwordBox.value)
+        .then(() => {
+            alert("Password has been copied!");
+        })
+        .catch(() => {
+            alert("Failed to copy");
+        });
+    }
+});
 
-  if (passwordBox.value === "") alert("First, generate the Password")
-  else {
-    passwordBox.select();
-    document.execCommand("copy");
-    alert("Password has been copied!")
-  }
-})
