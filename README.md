@@ -19,7 +19,7 @@ Designed with a modern, responsive UI and smooth user experience.
 
 - **HTML5**
 - **CSS3** 
-- **JavaScript 
+- **JavaScript** 
 
 
 
