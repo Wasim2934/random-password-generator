@@ -12,13 +12,13 @@ let allChar = upperCase + lowerCase + number + symbol;
 function randomPassword() {
   let password = "";
 
-  password += upperCase[Math.floor(Math.random()*upperCase.length)]
-  password += lowerCase[Math.floor(Math.random()*lowerCase.length)]
-  password += number[Math.floor(Math.random()*number.length)]
-  password += symbol[Math.floor(Math.random()*symbol.length)]
+  password += upperCase[Math.floor(Math.random() * upperCase.length)]
+  password += lowerCase[Math.floor(Math.random() * lowerCase.length)]
+  password += number[Math.floor(Math.random() * number.length)]
+  password += symbol[Math.floor(Math.random() * symbol.length)]
 
   while (password.length < passLength) {
-    password += allChar[Math.floor(Math.random()*allChar.length)];
+    password += allChar[Math.floor(Math.random() * allChar.length)];
   }
   passwordBox.value = password;
 }
@@ -30,9 +30,11 @@ button.addEventListener("click", () => {
 let copyPass = document.querySelector("#copy");
 
 copyPass.addEventListener("click", () => {
-  passwordBox.select();
-  document.execCommand("copy");
+
+  if (passwordBox.value === "") alert("First, generate the Password")
+  else {
+    passwordBox.select();
+    document.execCommand("copy");
+    alert("Password has been copied!")
+  }
 })
-
-
- 
