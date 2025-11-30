@@ -31,10 +31,10 @@ let copyPass = document.querySelector("#copy");
 
 copyPass.addEventListener("click", () => {
 
-  if (passwordBox.value === "") alert("First, generate the Password")
+  if (passwordBox.value === "") alert("First, generate the Password!!")
   else {
     passwordBox.select();
     document.execCommand("copy");
-    alert("Password has been copied!")
+    alert("Password has been copied")
   }
 })
