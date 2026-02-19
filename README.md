@@ -1,5 +1,10 @@
 # 🔐 Random Password Generator
 
+> ⚠️ **Archived Notice**  
+> This project was built during my initial learning phase.  
+> This repository is archived and kept only for history and progress tracking.  
+> A better and more professional version of this project will be built in a new repository.
+
 A clean and functional **Random Password Generator App** built using **HTML, CSS, and JavaScript**.  
 This tool instantly creates secure, unpredictable passwords and lets users copy them with one click.  
 Designed with a modern, responsive UI and smooth user experience.
